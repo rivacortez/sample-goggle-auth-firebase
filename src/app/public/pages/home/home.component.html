@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+  <span>Home</span>
+  <span class="spacer"></span>
+  <span *ngIf="user$ | async as user">{{ user.displayName }}</span>
+  <button mat-button (click)="logout()">Logout</button>
+</mat-toolbar>
+<p>Bienvenido !!!</p>
